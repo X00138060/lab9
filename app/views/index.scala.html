@@ -1,0 +1,50 @@
+@(products: List[models.Product])
+
+@main("Products Page") {
+  
+  <p class="lead">Product Catalogue</p>
+
+  @if(flash.containsKey("success")) {
+    <div class = "alert alert-success">
+      @flash.get("success")
+    </div>
+  }
+  
+  <table class="table table-bordered table-hover table-condensed">
+    <thead>
+    <!-- The header row-->
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Stock</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody> 
+    <!-- Product row(s) -->
+    @for(p<-products) {
+      <tr>
+        <td class = "id">@p.getId</td>
+        <td>@p.getName</td>
+        <td>@p.getDescription</td>
+        <td>@p.getStock</td>
+        <td>&euro; @("%,.2f".format(p.getPrice))</td>
+        <td>
+          <a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs button-danger" onlclick="return confirmDel();">
+            <span class="glyphicon glyphicon-trash"></span>
+          </a>
+        </td>
+      </tr>
+    }
+    </tbody>
+  </table>
+
+  <p>
+    <a href="@routes.HomeController.addProduct()">
+      <button class="btn btn-primary">Add a Product</button>
+    </a>
+  </p>
+  
+  }
