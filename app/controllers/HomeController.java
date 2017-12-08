@@ -39,8 +39,13 @@ public class HomeController extends Controller {
             return badRequest(addProduct.render(newProductForm));
         } else {
             Product newProduct = newProductForm.get();
-            newProduct.save();
-            flash("success", "Product" + newProduct.getName() + " was added");
+            if (newProduct.getId() == null) {
+                newProduct.save();
+            } else {
+                newProduct.update();
+            }
+            
+            flash("success", "Product " + newProduct.getName() + " was added/updated");
             return redirect(controllers.routes.HomeController.index());
         }
     }
@@ -49,6 +54,20 @@ public class HomeController extends Controller {
         Product.find.ref(id).delete();
         flash("sucess", "Product Deleted");
         return redirect(routes.HomeController.index());
+    }
+
+    @Transactional
+    public Result updateProduct(Long id) {
+        Product p;
+        Form<Product> productForm;
+
+        try {
+            p = Product.find.byId(id);
+            productForm = formFactory.form(Product.class).fill(p);
+        } catch (Exception ex) {
+            return badRequest("error");
+        }
+        return ok(addProduct.render(productForm));
     }
 
 }

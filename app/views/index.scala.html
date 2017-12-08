@@ -20,6 +20,7 @@
         <th>Stock</th>
         <th>Price</th>
         <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody> 
@@ -32,7 +33,12 @@
         <td>@p.getStock</td>
         <td>&euro; @("%,.2f".format(p.getPrice))</td>
         <td>
-          <a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs button-danger" onlclick="return confirmDel();">
+          <a class="btn-xs btn-danger" href="@routes.HomeController.updateProduct(p.getId)">
+            <span class="glyphicon glyphicon-pencil"></span>
+          </a>
+        </td>
+        <td>
+          <a class="btn-xs btn-danger" onlclick="return confirmDel();" href="@routes.HomeController.deleteProduct(p.getId)">
             <span class="glyphicon glyphicon-trash"></span>
           </a>
         </td>

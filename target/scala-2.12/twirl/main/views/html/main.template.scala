@@ -48,9 +48,8 @@ Seq[Any](format.raw/*1.32*/("""
     """),format.raw/*16.5*/("""</style>
 
 <!-- Bootstrap Core CSS -->
-<script src=""""),_display_(/*19.15*/routes/*19.21*/.Assets.versioned("javascripts/main.js")),format.raw/*19.61*/(""""></script>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet" />
-<!-- Custom CSS --> <link href=""""),_display_(/*21.34*/routes/*21.40*/.Assets.versioned("stylesheets/main.css")),format.raw/*21.81*/("""" rel="stylesheet" />
+<!-- Custom CSS --> <link href=""""),_display_(/*20.34*/routes/*20.40*/.Assets.versioned("stylesheets/main.css")),format.raw/*20.81*/("""" rel="stylesheet" />
 
 </head>
 
@@ -86,9 +85,9 @@ Seq[Any](format.raw/*1.32*/("""
 
 <div class="col-md-12">
 
-"""),_display_(/*57.2*/content),format.raw/*57.9*/("""
+"""),_display_(/*56.2*/content),format.raw/*56.9*/("""
 
-"""),format.raw/*59.1*/("""</div>
+"""),format.raw/*58.1*/("""</div>
 
 </row>
 
@@ -107,6 +106,7 @@ Copyright <strong>Online Shop</strong>
 </row>
 
 </container>
+<script src=""""),_display_(/*77.15*/routes/*77.21*/.Assets.versioned("javascripts/main.js")),format.raw/*77.61*/(""""></script>
 
 </body>
 
@@ -126,11 +126,11 @@ Copyright <strong>Online Shop</strong>
 
               /*
                   -- GENERATED --
-                  DATE: Thu Dec 07 13:52:09 GMT 2017
-                  SOURCE: /media/sf_student/lab8/app/views/main.scala.html
-                  HASH: ddcd502f6911b12d10a19941bf84891e99b8ebf4
-                  MATRIX: 952->1|1077->31|1107->35|1231->132|1257->137|1320->172|1349->173|1391->187|1446->215|1475->216|1508->222|1590->277|1605->283|1666->323|1839->469|1854->475|1916->516|2387->961|2414->968|2445->972
-                  LINES: 28->1|33->1|35->3|43->11|43->11|45->13|45->13|46->14|47->15|47->15|48->16|51->19|51->19|51->19|53->21|53->21|53->21|89->57|89->57|91->59
+                  DATE: Fri Dec 08 12:47:16 GMT 2017
+                  SOURCE: /media/sf_student/lab9/app/views/main.scala.html
+                  HASH: d788c9057f8fb9519b79f5585de696b88b032bf5
+                  MATRIX: 952->1|1077->31|1105->33|1221->122|1247->127|1308->160|1337->161|1378->174|1432->201|1461->202|1493->207|1690->377|1705->383|1767->424|2202->833|2229->840|2258->842|2443->1000|2458->1006|2519->1046
+                  LINES: 28->1|33->1|35->3|43->11|43->11|45->13|45->13|46->14|47->15|47->15|48->16|52->20|52->20|52->20|88->56|88->56|90->58|109->77|109->77|109->77
                   -- GENERATED --
               */
           

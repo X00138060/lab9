@@ -1,4 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/media/sf_student/lab8/app/controllers/HomeController.java:39:1: cannot find symbol[0m
-[0m[[0m[31merror[0m] [0m[0m  symbol:   method render(play.data.Form<models.Product>)[0m
-[0m[[0m[31merror[0m] [0m[0m  location: class play.mvc.Result[0m
-[0m[[0m[31merror[0m] [0m[0m            return badRequest(addProduct().render(newProductForm));[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/lab9/app/controllers/HomeController.java:69:1: variable productForm might not have been initialized[0m
+[0m[[0m[31merror[0m] [0m[0m        return ok(addProduct.render(productForm));[0m
